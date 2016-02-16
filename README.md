@@ -24,8 +24,8 @@ Now you can use the follow functions:
     HKInfo("a nice information");   // prio 3, INFO in green
     HKWarning("oh no, that won’t be good");  // prio 4, WARNING in yellow
     HKError("ouch, an error did occur!"); // prio 5, ERROR in red
-    HKAlt(@"alternative color"); // prio 5, ALTERNATIVE in magenta
-    HKOpt(@"optional color"); // prio 5, OPTIONAL in cyan
+    HKAlt(@"alternative color"); // prio 6, ALTERNATIVE in magenta
+    HKOpt(@"optional color"); // prio 7, OPTIONAL in cyan
     
     // log anything!
     HKVerbose(@"%zd",123);
