@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Debug
+    // Debug log \o/
     HKNormal(@"normal log without color, but whit the format of HK");
     HKVerbose(@"normal log with Verbose in gray");
     HKDebug(@"this line is with a debug word in %@",@"blue");
@@ -29,7 +29,7 @@
     HKAlt(@"alternative color");
     HKOpt(@"optional color");
     
-    //All line is in color
+    //All lines is in color
     HKFullColor(true);
     HKVerbose(@"this is a integer %zd",123);
     HKInfo(@"and this is a float %f",-123.45678);
