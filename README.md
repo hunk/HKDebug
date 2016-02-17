@@ -6,9 +6,11 @@
 # HKDebug
 Another custom debug log with colors (based in [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) but for Objective-C) with help of [XcodeColors](https://github.com/robbiehanson/XcodeColors)
 
-I love [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver), it is a realy good. but i have some projects in Objective-C and i want the same output for the Xcode console. [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) have a wrapper [SBObjectiveCWrapper](https://github.com/SwiftyBeaver/SBObjectiveCWrapper) for Objective-C but you need a AppDelegate in Swift and my old proyects are all in Objective-C. then i need change my AppDelegate to swfit version, add SwiftyBeaver and SBObjectiveCWrapper, set the options for SwiftyBeaver.
+I love [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver), it is a realy good. but i have some projects in Objective-C and i want the same output for the Xcode console. [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) already has a wrapper [SBObjectiveCWrapper](https://github.com/SwiftyBeaver/SBObjectiveCWrapper) for Objective-C but it requires an AppDelegate in Swift. By the way if your old proyects are all in Objective-C, then you need change your AppDelegate to swfit version, add SwiftyBeaver and SBObjectiveCWrapper, set the options for SwiftyBeaver.
 
-So, i decided to make this little class (functions and macros) for have the same output.
+For that reason I decided to make this little class (functions and macros) in order to have the same output.
+
+
 
 <img src="https://raw.githubusercontent.com/hunk/MediaDemo/master/HKDebug/console.png">
 
