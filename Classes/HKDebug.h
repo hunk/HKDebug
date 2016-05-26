@@ -26,19 +26,19 @@
     #define HKShowFunc(value)    [HKLog showFunction:value];
     #define HKShowLine(value)    [HKLog showLine:value];
 #else
-    #define HKNormal
-    #define HKVerbose
-    #define HKDebug
-    #define HKInfo
-    #define HKWarning
-    #define HKError
-    #define HKAlt
-    #define HKOpt
-    #define HKFullColor
-    #define HKShowDate
-    #define HKShowFile
-    #define HKShowFunc
-    #define HKShowLine
+    #define HKNormal(...)
+    #define HKVerbose(...)
+    #define HKDebug(...)
+    #define HKInfo(...)
+    #define HKWarning(...)
+    #define HKError(...)
+    #define HKAlt(...)
+    #define HKOpt(...)
+    #define HKFullColor(...)
+    #define HKShowDate(...)
+    #define HKShowFile(...)
+    #define HKShowFunc(...)
+    #define HKShowLine(...)
 #endif
 
 typedef enum {
