@@ -21,24 +21,24 @@
     #define HKAlt(frmt, ...)     [HKLog log:HKTypeAlternative file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt,##__VA_ARGS__];
     #define HKOpt(frmt, ...)     [HKLog log:HKTypeOptional    file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt,##__VA_ARGS__];
     #define HKFullColor(value)   [HKLog fullColor:value];
-    #define HKShowDate(value)    [HKLog fullColor:value];
-    #define HKShowFile(value)    [HKLog fullColor:value];
-    #define HKShowFunc(value)    [HKLog fullColor:value];
-    #define HKShowLine(value)    [HKLog fullColor:value];
+    #define HKShowDate(value)    [HKLog showDate:value];
+    #define HKShowFile(value)    [HKLog showFile:value];
+    #define HKShowFunc(value)    [HKLog showFunction:value];
+    #define HKShowLine(value)    [HKLog showLine:value];
 #else
-    #define HKNormal
-    #define HKVerbose
-    #define HKDebug
-    #define HKInfo
-    #define HKWarning
-    #define HKError
-    #define HKAlt
-    #define HKOpt
-    #define HKFullColor
-    #define HKShowDate
-    #define HKShowFile
-    #define HKShowFunc
-    #define HKShowLine
+    #define HKNormal(...)
+    #define HKVerbose(...)
+    #define HKDebug(...)
+    #define HKInfo(...)
+    #define HKWarning(...)
+    #define HKError(...)
+    #define HKAlt(...)
+    #define HKOpt(...)
+    #define HKFullColor(...)
+    #define HKShowDate(...)
+    #define HKShowFile(...)
+    #define HKShowFunc(...)
+    #define HKShowLine(...)
 #endif
 
 typedef enum {
