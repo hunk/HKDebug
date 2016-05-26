@@ -21,10 +21,10 @@
     #define HKAlt(frmt, ...)     [HKLog log:HKTypeAlternative file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt,##__VA_ARGS__];
     #define HKOpt(frmt, ...)     [HKLog log:HKTypeOptional    file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt,##__VA_ARGS__];
     #define HKFullColor(value)   [HKLog fullColor:value];
-    #define HKShowDate(value)    [HKLog fullColor:value];
-    #define HKShowFile(value)    [HKLog fullColor:value];
-    #define HKShowFunc(value)    [HKLog fullColor:value];
-    #define HKShowLine(value)    [HKLog fullColor:value];
+    #define HKShowDate(value)    [HKLog showDate:value];
+    #define HKShowFile(value)    [HKLog showFile:value];
+    #define HKShowFunc(value)    [HKLog showFunction:value];
+    #define HKShowLine(value)    [HKLog showLine:value];
 #else
     #define HKNormal
     #define HKVerbose
